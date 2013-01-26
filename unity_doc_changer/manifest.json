@@ -1,0 +1,12 @@
+{
+  "name": "Unity online document EN <-> JP changer.",
+  "version": "1.0",
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "browser_action": {
+      "name": "Click to change Unity online document"
+  },
+  "manifest_version": 2
+}
