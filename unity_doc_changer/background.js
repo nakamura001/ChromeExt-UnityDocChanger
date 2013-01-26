@@ -8,8 +8,8 @@ var y="//docs-jp.unity3d.com/";
 //  chrome.tabs.update(tab.id, {url: "http://unity3d.com"});
 	chrome.tabs.getSelected(null,function(tab) {
 		var newUrl;
-		var enUrlPattrn = /http:\/\/docs\.unity3d\.com\//;
-		var jpUrlPattrn = /http:\/\/docs-jp\.unity3d\.com\//
+		var enUrlPattrn = /^http:\/\/docs\.unity3d\.com\//;
+		var jpUrlPattrn = /^http:\/\/docs-jp\.unity3d\.com\//
 		
 		if (enUrlPattrn.test(tab.url)) {
 			newUrl = tab.url.replace(enUrlPattrn, "http://docs-jp.unity3d.com/");
