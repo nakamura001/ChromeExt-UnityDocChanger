@@ -1,11 +1,4 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-var x="//docs.unity3d.com/";
-var y="//docs-jp.unity3d.com/";
-
-//var pattern=/\bBlocked/;
-//if (pattern.test(window.document.title)) // if it matches pattern defined above
-
-//  chrome.tabs.update(tab.id, {url: "http://unity3d.com"});
 	chrome.tabs.getSelected(null,function(tab) {
 		var newUrl;
 		var enUrlPattrn = /^http:\/\/docs\.unity3d\.com\//;
